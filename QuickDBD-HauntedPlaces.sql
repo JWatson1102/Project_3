@@ -4,16 +4,13 @@
 
 
 CREATE TABLE "haunted_places" (
-    "city" varchar(50)   NOT NULL,
-    "country" varchar(50)   NOT NULL,
-    "description" varchar   NOT NULL,
-    "location" varchar   NOT NULL,
-    "state" varchar   NOT NULL,
-    "state_abbrev" varchar   NOT NULL,
-    "longitude" float   NOT NULL,
-    "latitude" float   NOT NULL,
-    CONSTRAINT "pk_haunted_places" PRIMARY KEY (
-        "city"
-     )
+    "city" varchar(50),
+    "country" varchar(50),
+    "description" varchar,
+    "location" varchar,
+    "state" varchar,
+    "state_abbrev" varchar,
+    "longitude" float,
+    "latitude" float
 );
 
