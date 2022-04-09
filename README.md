@@ -1,6 +1,6 @@
 
 <h1><b>Track the Paranormal!</b></h1>
-<img src="readme_owl.png">
+<img src="readme_hand.png">
 <h4><strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h4>
 <hr>
 <h4>Please find above our source data files which we cleaned up and sifted through.  You can also find the databases we created with these.</h4>
