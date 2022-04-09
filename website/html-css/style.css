@@ -277,4 +277,8 @@ html, body {
   100% {
     transform: skew(-2deg);
   }
+  .fix{
+    position:fixed;
+    bottom:50px;
+      }
 }
