@@ -10,4 +10,6 @@ When you arrive at our webpage, you will see a spooooky music option - we recomm
 Steps taken:
 <li>Find data sources</li>
 <li>Filter through for useful data</li>
-<li>Create DataBase</li>
+<li>Create functional databases</li>
+<li>Build basis of HTML webpage</li>
+<li>Decorate and troubleshoot pages</li>
