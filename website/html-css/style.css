@@ -26,6 +26,10 @@ html, body {
   text-align: center;
 }
 
+.navbar{
+ background:rgba(0, 0, 0, 0.9);
+
+}
 .sub {
   color: red;
   letter-spacing: 1em;
@@ -277,8 +281,5 @@ html, body {
   100% {
     transform: skew(-2deg);
   }
-  .fix{
-    position:fixed;
-    bottom:50px;
-      }
+  
 }
