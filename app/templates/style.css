@@ -17,7 +17,11 @@ html, body {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
-
+.zoom1 {
+  padding: 50px;
+  transition: transform .2s;
+  
+}
 .zoom1:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
