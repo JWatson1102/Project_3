@@ -25,6 +25,17 @@ html, body {
 #wrapper {
   text-align: center;
 }
+.left-button{
+  float: left;
+}
+.navbar{
+  border: 4px solid black;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  background-color:black;
+}
+
 
 .sub {
   color: red;
@@ -277,4 +288,5 @@ html, body {
   100% {
     transform: skew(-2deg);
   }
+  
 }
