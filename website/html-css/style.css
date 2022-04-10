@@ -25,7 +25,9 @@ html, body {
 #wrapper {
   text-align: center;
 }
-
+.left-button{
+  float: left;
+}
 .navbar{
  background:rgba(0, 0, 0, 0.9);
 
