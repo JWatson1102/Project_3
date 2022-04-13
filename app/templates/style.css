@@ -4,6 +4,8 @@ html, body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+
 .zoom {
   padding: 50px;
   transition: transform .2s;
