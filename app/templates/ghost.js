@@ -33,7 +33,7 @@ fetch("../../haunted_data/haunted.json")
             // var location = ([city.latitude, city.longitude])
             if (sighting) {
                 markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
-                    .bindPopup(sighting.city + "<hr><p>" + sighting.description + "</p>"));
+                    .bindPopup(sighting.location + "<br>" + sighting.city + ", " + sighting.state_abbrev + "<hr><p>" + sighting.description + "</p>"));
             }
         }
     myMap.addLayer(markers);
