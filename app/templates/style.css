@@ -44,7 +44,7 @@ html {
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,6 +75,8 @@ html {
   letter-spacing: 1em;
   font-size: 30px;
 }
+
+
 
 
 .glitch {
@@ -321,5 +323,6 @@ html {
   100% {
     transform: skew(-2deg);
   }
+
   
 }
