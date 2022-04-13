@@ -4,6 +4,10 @@ html, body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+.centered {
+  text-align:center;
+
+}
 .zoom {
   padding: 50px;
   transition: transform .2s;
@@ -32,6 +36,12 @@ html, body {
 #map,
 body,
 html {
+  background: url(https://images5.alphacoders.com/304/304200.jpg) no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
 }
 
@@ -40,7 +50,7 @@ html {
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +81,8 @@ html {
   letter-spacing: 1em;
   font-size: 30px;
 }
+
+
 
 
 .glitch {
@@ -317,5 +329,6 @@ html {
   100% {
     transform: skew(-2deg);
   }
+
   
 }

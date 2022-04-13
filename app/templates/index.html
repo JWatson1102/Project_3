@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=”stylesheet” href=”css/bootstrap.css”>
+	<link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
     <link rel="stylesheet" href="./style.css">
 
     <title></title>
@@ -13,14 +15,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
-    <link rel="stylesheet" href="../static/style.css"
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="../static/style.css" -->
 
 </head>
 <body>
     
   	<!-- partial:index.partial.html -->
-	<nav class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
+	<nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
 		<div id="buttons" >
 			<div style ="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;" >
 			<button type="button" class="btn pos_right btn-transparent zoom1">
@@ -42,6 +44,7 @@
 				</button>
 			</div>
 	</nav>
+
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-b7e683fb-bed8-41cc-8f73-7c64c68355ea"></div>
 
@@ -49,8 +52,7 @@
 	
 	<div id="wrapper">
 
-		<h1 class="glitch" data-text="
-Project3">Project3</h1>
+		<h1 class="glitch" data-text="Project3">Project3</h1>
 		<span class="sub">Paranormal Activity Locator</span>
     
 	</div>
@@ -59,7 +61,7 @@ Project3">Project3</h1>
 	<br>
 	<br>
 	
-	 <div class="row">
+	 <div class="row img-fluid centered">
         <p><a href="ufo_files.html">
 		    <div class="col-md-4 zoom">
                 <img src="../static/images/ufo1.png" class="fix"/>
