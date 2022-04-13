@@ -28,7 +28,12 @@ html, body {
   transform: scale(1.5); 
 }
 
-
+/* Set map, body, and html to 100% of the screen size. */
+#map,
+body,
+html {
+  height: 100%;
+}
 
 #app {
   background: #0a0a0a;
