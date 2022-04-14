@@ -5,7 +5,8 @@
 
 <strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h4>
 
-<h4>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with:
+<h4>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with: 
+<br>
 
 - Interactive maps with density of sightings/events
 - Specific locations and brief descriptions of reports
