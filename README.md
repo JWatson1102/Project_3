@@ -9,7 +9,7 @@
 
 - Interactive maps with density of sightings/events
 - Specific locations and brief descriptions of reports
-- Testimonials of hauntings, UFO events, and bigfoot sightings
+- Testimonials of hauntings, UFO events, and bigfoot sightings</h4>
 
 <i><small>*When you arrive at our webpage, you will see a spooooky music option - we recommend you give it a try for the full effect!</i></small>
 
