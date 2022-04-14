@@ -1,12 +1,12 @@
 
 <!-- <h1 text-aligh:center;><b>Track the Paranormal!</b></h1> -->
 <center><img src="readme_hand.png"></center>
-<h4 text-aligh:center;>
+<h3>
 
-<strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h4>
+<strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h3>
 
-<h4>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with: 
-<br>
+<h3>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with: </h3>
+<h4>
 
 - Interactive maps with density of sightings/events
 - Specific locations and brief descriptions of reports
@@ -18,7 +18,7 @@
 
 <hr>
 
-<h4>Please find in our repository the source data files which we cleaned up and sifted through.  You can also find the databases we created with these.</h4>
+<h3>Please find in our repository the source data files which we cleaned up and sifted through.  You can also find the databases we created with these.</h3>
 
 <br>
 
