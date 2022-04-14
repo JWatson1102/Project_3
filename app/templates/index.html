@@ -22,13 +22,14 @@
 <body>
     
   	<!-- partial:index.partial.html -->
-	<nav class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
+	<nav id="topbar" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
 		<div id="buttons" >
 			<div style ="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;" >
 			<button type="button" class="btn pos_right btn-transparent zoom1">
 				<a style="color: red; text-decoration: none; " href="index.html">Home</a>
 			</button>
 		</div>
+		
 		<div style ="position: absolute; top: 13%; right: 0%; font-family: 'Courier New', Courier, monospace; font-size: 10px ;" >
 			<div id="buttons" >
 			
@@ -42,8 +43,31 @@
 				<button type="button" class="btn btn-transparent zoom1">
 					<a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
 				</button>
-			</div>
+		</div>
+	
 	</nav>
+	<div id="hamburgerbox">
+		<nav class="navbar navbar-dark" id="nav_bar">
+			<div class="container-fluid">
+				<button id="hamburger" style="margin-left:auto" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+		<div class="collapse" id="navbarToggleExternalContent" style="font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
+			<div class="bg-dark p-4">
+				<button type="button" class="btn">
+					<a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
+				</button>
+				<button type="button" class="btn">
+					<a style="color: red; text-decoration: none; " href="ufo_files.html">UFO Files</a>
+				</button>
+				<button type="button" class="btn">
+					<a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
+				</button>
+			</div>
+		</div>
+	</div>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-b7e683fb-bed8-41cc-8f73-7c64c68355ea"></div>
 
@@ -84,5 +108,6 @@ Project3">Project3</h1>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body>
 </body>
 </html>

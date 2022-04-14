@@ -55,6 +55,7 @@ html {
   z-index: 1;
 }
 
+
 #wrapper {
   text-align: center;
 }
@@ -69,6 +70,15 @@ html {
   background-color:black;
 }
 
+/* **************************** */
+#hamburgerbox{
+  position: absolute;
+  right: 0%;
+  visibility: hidden;
+}
+  
+
+  /* ***************************** */
 
 .sub {
   color: red;
@@ -322,4 +332,16 @@ html {
     transform: skew(-2deg);
   }
   
+}
+
+@media(max-width:767px){
+  #hamburgerbox {
+    visibility: visible;
+    position: relative;
+  }
+
+  #topbar{
+    position:absolute;
+    visibility: hidden;
+  }
 }
