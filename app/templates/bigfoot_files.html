@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
     <title>Bigfoot Files</title>
@@ -12,48 +15,107 @@
     <meta name="author" content="LayoutIt!">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
 
     <!-- Leaflet JavaScript code -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
+    p {text-align: center;}
 </head>
+
 <body>
-<!--Navigation bar and buttons-->
-<nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
-    <div id="buttons" >
-        <div style ="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;" >
-        <button type="button" class="btn pos_right btn-transparent zoom1">
-            <a style="color: red; text-decoration: none; " href="index.html">Home</a>
+    <!--Navigation bar and buttons-->
+    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
+        <div id="buttons">
+            <div
+                style="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;">
+                <button type="button" class="btn pos_right btn-transparent zoom1">
+                    <a style="color: red; text-decoration: none; " href="index.html">Home</a>
 
-    </div>
-    <div style ="position: absolute; top: 13%; right: 0%; font-family: 'Courier New', Courier, monospace; font-size: 10px ;" >
-        <div id="buttons" >
-        
-            <button type="button" class="btn btn-transparent zoom1">
-                <a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
-            </button>
-            </ul>
-            <button type="button" class="btn btn-transparent zoom1">
-                <a style="color: red; text-decoration: none; " href="ufo_files.html">UFO Files</a>
-            </button>
-            <button type="button" class="btn btn-transparent zoom1">
-                <a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
-            </button>
+            </div>
+            <div
+                style="position: absolute; top: 13%; right: 0%; font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
+                <div id="buttons">
+
+                    <button type="button" class="btn btn-transparent zoom1">
+                        <a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
+                    </button>
+                    </ul>
+                    <button type="button" class="btn btn-transparent zoom1">
+                        <a style="color: red; text-decoration: none; " href="ufo_files.html">UFO Files</a>
+                    </button>
+                    <button type="button" class="btn btn-transparent zoom1">
+                        <a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
+                    </button>
+                </div>
+    </nav>
+
+
+
+    <!-- Testimonial Carousel -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p style="color:whitesmoke">"...and then the tree that I had just walked right past stepped out onto the trail."
+            -Cherokee County, Texas November 2013</p>
+          </div>
+          <div class="carousel-item">
+            <p style="color:whitesmoke">
+            "It began with something throwing rocks at our RV...bears don't throw rocks or tap on windows."
+            -Taney County, Missouri May 2021
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p style="color:whitesmoke">
+                "I kicked the horse into a gallop and headed home my heart pounding in my chest. I looked back 
+                over my shoulder, and saw them disappear slowly still walking erect into the woods."
+                -Upshur County, Texas October 1976
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p style="color:whitesmoke">
+                "Upon arriving to the scene, the response team found the individual still in the car; the car 
+                apparently rolled and ended up in the woods off the highway. The individual remembered seeing 
+                a dark upright figure with long hair standing in the middle of the road."
+                -Polk County, Texas March 2005
+            </p> 
+          </div>
+          <div class="carousel-item">
+            <p style="color:whitesmoke">
+                "...it was a long loud deep growl, unlike a hog snorting, and it did this approximately three 
+                to four times. After it did that there was a long series of chattering noises that came from 
+                two different animals in front and behind us, but we never could see it."
+                -San Jacinto County, Texas April 2005
+            </p> 
+          </div>
         </div>
-</nav>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-<div id="map"></div>
 
-<script type="text/javascript" src="../../bigfoot_data/bigfoot.json"></script>
-<script type="text/javascript" src="bigfoot.js"></script>
+    <div id="map"></div>
 
+    <script type="text/javascript" src="../../bigfoot_data/bigfoot.json"></script>
+    <script type="text/javascript" src="bigfoot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

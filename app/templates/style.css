@@ -32,6 +32,10 @@ html, body {
   transform: scale(1.5); 
 }
 
+#carouselControls{
+  padding-left: 150px;
+  padding-right: 150px;
+}
 /* Set map, body, and html to 100% of the screen size. */
 #map,
 body,
