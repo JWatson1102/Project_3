@@ -8,7 +8,7 @@ from config import password
 table_name = "ufo_data"
 table_name2 = "haunted_places"
 table_name3 = "bigfoot_sightings"
-db_name = "website_database"
+db_name = "haunted_places"
 
 #check if we're running in heroku and my environmental variable exist
 if 'DATABASE_URL' in os.environ:
@@ -16,7 +16,7 @@ if 'DATABASE_URL' in os.environ:
 else:
     #if we're not running in heroku then try and get my local config password
     
-    postgres_url = f"postgresql://postgres:{password}@127.0.0.1:5432/{db_name}"
+    postgres_url = f"postgresql://postgres:{password}@127.0.0.1:5433/{db_name}"
 
 
 app = Flask(__name__)
