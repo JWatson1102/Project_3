@@ -4,6 +4,11 @@ import sqlite3
 import psycopg2
 #from db import config
 from config import password 
+from datetime import datetime
+epoch = datetime(1970, 1, 1)
+t = datetime(1956, 3, 2)
+diff = t-epoch
+# print diff.days * 24 * 3600 + diff.seconds
 
 table_name = "ufo_data"
 table_name2 = "haunted_places"
@@ -82,6 +87,7 @@ def bigfoot_json():
     conn = psycopg2.connect(postgres_url)
     cursor = conn.cursor()
 
+    # cursor.execute(f'''ALTER TABLE {table_name3} DROP COLUMN id;''')
     cursor.execute(f'''select * from {table_name3};''')
 
     results = cursor.fetchall()
