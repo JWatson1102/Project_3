@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100");
+
 html, body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-}
-<<<<<<< HEAD:app/static/style.css
-=======
-.centered {
-  text-align:center;
 
 }
->>>>>>> 50fe9bfa9f2063d31ad479cecb64650a989e1cc5:app/static/styles/style.css
+
+.centered {
+  text-align:center;
+}
 
 .zoom {
   padding: 10px;
