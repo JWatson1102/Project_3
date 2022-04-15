@@ -40,7 +40,6 @@ html, body {
   padding-right: 150px;
 }
 /* Set map, body, and html to 100% of the screen size. */
-#map,
 body,
 html {
   background: url(https://images5.alphacoders.com/304/304200.jpg) no-repeat 
@@ -50,6 +49,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+}
+
+#map{
+  margin-top: 15vw;
+  height: 85vw;
 }
 
 #app {

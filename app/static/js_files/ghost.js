@@ -12,16 +12,18 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //   // An array containing each city's name, location, and population
 // var ghostFiles = $.getJSON("../../haunted_data/haunted.json", function(){
 //     console.log("success");
-fetch("../../haunted_data/haunted.json")
+fetch("/api/haunted_places")
     .then(response => response.json())
     .then(function (json) {
-        console.log(json)
+        var markers = L.markerClusterGroup();
         for (var i = 0; i < json.length; i++) {
-            var city = json[i];
-            L.marker([city.latitude, city.longitude])
-                .bindPopup(`${city.city}<hr><p>${city.description}</p>`)
-                .addTo(myMap);
+            var sighting = json[i];
+            if (sighting) {
+                markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
+                    .bindPopup(sighting.location + "<br>" + sighting.city + ", " + sighting.state_abbrev + "<hr><p>" + sighting.description + "</p>"));
+            }
         }
+    myMap.addLayer(markers);
     });
 
 

@@ -76,7 +76,21 @@ def ghost_json():
     print("responding to /postgresql-web-api route request")
     return jsonify(ghost_files_db)
 
+@app.route("/api/bigfoot_data")
+def bigfoot_json():
 
+    conn = psycopg2.connect(postgres_url)
+    cursor = conn.cursor()
+
+    cursor.execute(f'''select * from {table_name3};''')
+
+    results = cursor.fetchall()
+    bigfoot_db = [{"observed":results[0], "county":results[1], "state":results[2], "latitude":results[3], "longitude":results[4], "date":results[5]} for results in results]
+
+    conn.close()
+
+    print("responding to /postgresql-web-api route request")
+    return jsonify(bigfoot_db)
 
 if __name__ == '__main__':
     app.run(debug=True)
