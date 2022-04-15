@@ -13,7 +13,7 @@ html, body {
 >>>>>>> 50fe9bfa9f2063d31ad479cecb64650a989e1cc5:app/static/styles/style.css
 
 .zoom {
-  padding: 50px;
+  padding: 10px;
   transition: transform .2s;
   width: 200px;
   height: 200px;
@@ -26,7 +26,7 @@ html, body {
   transform: scale(1.5); 
 }
 .zoom1 {
-  padding: 50px;
+  padding: 5px;
   transition: transform .2s;
   
 }
