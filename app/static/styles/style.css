@@ -4,6 +4,11 @@ html, body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+.centered {
+  text-align:center;
+
+}
+
 .zoom {
   padding: 50px;
   transition: transform .2s;
@@ -28,14 +33,29 @@ html, body {
   transform: scale(1.5); 
 }
 
-
+#carouselControls{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+/* Set map, body, and html to 100% of the screen size. */
+#map,
+body,
+html {
+  background: url(https://images5.alphacoders.com/304/304200.jpg) no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
 
 #app {
   background: #0a0a0a;
   height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +65,7 @@ html, body {
   background-position: center;
   z-index: 1;
 }
+
 
 #wrapper {
   text-align: center;
@@ -60,12 +81,23 @@ html, body {
   background-color:black;
 }
 
+/* **************************** */
+#hamburgerbox{
+  position: absolute;
+  right: 0%;
+  visibility: hidden;
+}
+  
+
+  /* ***************************** */
 
 .sub {
   color: red;
   letter-spacing: 1em;
   font-size: 30px;
 }
+
+
 
 
 .glitch {
@@ -312,5 +344,19 @@ html, body {
   100% {
     transform: skew(-2deg);
   }
+
   
+}
+
+@media(max-width:767px){
+  #hamburgerbox {
+    visibility: visible;
+    position: relative;
+  }
+
+  
+  #topbar{
+    position:absolute;
+    visibility: hidden;
+  }
 }
