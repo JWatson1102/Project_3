@@ -3,6 +3,7 @@ import os
 import sqlite3
 import psycopg2
 #from db import config
+from config import password 
 
 table_name = "ufo_data"
 table_name2 = "haunted_places"
@@ -15,7 +16,7 @@ if 'DATABASE_URL' in os.environ:
 else:
     #if we're not running in heroku then try and get my local config password
     
-    postgres_url = f"postgresql://postgres:postgres@127.0.0.1:5432/{db_name}"
+    postgres_url = f"postgresql://postgres:{password}@127.0.0.1:5432/{db_name}"
 
 
 app = Flask(__name__)
