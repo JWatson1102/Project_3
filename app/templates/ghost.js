@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-fetch("/api/haunted_places")
+fetch("../../haunted_data/haunted.json")
     .then(response => response.json())
     .then(function (json) {
         var markers = L.markerClusterGroup();
