@@ -24,7 +24,7 @@ html, body {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
-.zoom1 {
+/* .zoom1 {
   padding: 5px;
   transition: transform .2s;
   
@@ -33,7 +33,7 @@ html, body {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
-}
+} 
 
 #carouselControls{
   padding-left: 150px;
