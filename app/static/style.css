@@ -97,6 +97,12 @@ html {
   position: absolute;
   right: 0%;
   visibility: hidden;
+  height: 55px;
+}
+
+#hamburger{
+  position: relative;
+  bottom: 6px;
 }
   
 
@@ -372,8 +378,8 @@ html {
   }
 
   #app{
-    position: absolute;
-    top: 55px;
+    position: relative;
+    /* top: 55px; */
   }
 
   #project_title{
