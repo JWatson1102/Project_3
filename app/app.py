@@ -3,11 +3,6 @@ import os
 import sqlite3
 import psycopg2
 from config import password 
-# from datetime import datetime
-# epoch = datetime(1970, 1, 1)
-# t = datetime(1956, 3, 2)
-# diff = t-epoch
-# # print diff.days * 24 * 3600 + diff.seconds
 
 
 table_name = "ufo_data"
@@ -49,9 +44,7 @@ def back_home():
 
 @app.route("/api/ufo_json")
 def ufo_json():
-    # conn = psycopg2.connect
-    #     database=db_name, user='postgres', password=postgres_pwd, host='127.0.0.1', port= '5432'
-    # 
+
     conn = psycopg2.connect(postgres_url)
     cursor = conn.cursor()
 
@@ -90,9 +83,8 @@ def bigfoot_json():
     cursor.execute(f'''select * from {table_name3};''')
     print("this is a test")
     results = cursor.fetchall()
-    # print(results)
     bigfoot_db = [{"observed":result[0], "county":result[1], "state":result[2], "latitude":result[3], "longitude":result[4]} for result in results]
-    # bigfoot_db = [{"date":result[5]} for result in results]
+    
     conn.close()
 
     print("responding to /postgresql-web-api route request")
