@@ -43,9 +43,17 @@ html, body {
   padding-left:60px;
   padding-right:60px;
 }  
-#carouselControls{
+
+
+
+.carousel-inner{
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.carouselControls{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /* Set map, body, and html to 100% of the screen size. */
 body,
