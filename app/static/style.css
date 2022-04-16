@@ -7,6 +7,10 @@ html, body {
 
 }
 
+.page_links {
+  padding-right: 25px;
+}
+
 .centered {
   text-align:center;
 }
@@ -24,8 +28,9 @@ html, body {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
-/* .zoom1 {
-  padding: 5px;
+
+.zoom1 {
+  /* padding: 5px; */
   transition: transform .2s;
   
 }
