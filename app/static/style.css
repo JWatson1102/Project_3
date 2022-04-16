@@ -39,10 +39,17 @@ html, body {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 } 
-
-#carouselControls{
-  padding-left: 150px;
-  padding-right: 150px;
+.page-header{
+  padding-left:60px;
+  padding-right:60px;
+}  
+.carousel-inner{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.carouselControls{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /* Set map, body, and html to 100% of the screen size. */
 body,
@@ -57,7 +64,6 @@ html {
 }
 
 #map{
-  margin-top: 0vw;
   height: 85vw;
 }
 
