@@ -43,7 +43,7 @@ def ghost():
 def ufo():
     return render_template('ufo_files.html')
 
-@app.route('/index')
+@app.route('/index.html')
 def back_home():
     return render_template('index.html')
 
