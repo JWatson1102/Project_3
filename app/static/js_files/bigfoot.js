@@ -22,7 +22,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //         }
 //     });
 
-fetch("../../bigfoot_data/bigfoot.json")
+fetch("/api/bigfoot_data")
     .then(response => response.json())
     .then(function (json) {
         var markers = L.markerClusterGroup();
@@ -31,7 +31,7 @@ fetch("../../bigfoot_data/bigfoot.json")
             // var location = ([city.latitude, city.longitude])
             if (sighting) {
                 markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
-                    .bindPopup(sighting.county + "<br>" + sighting.date));
+                    .bindPopup(sighting.county + ", " + sighting.state + "<hr><p>" + sighting.observed + "</p>"));
             }
         }
     myMap.addLayer(markers);

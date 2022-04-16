@@ -2,24 +2,13 @@ from flask import Flask, jsonify, render_template, redirect
 import os
 import sqlite3
 import psycopg2
-#from db import config
 from config import password 
 # from datetime import datetime
 # epoch = datetime(1970, 1, 1)
 # t = datetime(1956, 3, 2)
 # diff = t-epoch
 # # print diff.days * 24 * 3600 + diff.seconds
-from flask.json import JSONEncoder
 
-# class MyJSONEncoder(JSONEncoder):
-#     def default(self, o):
-#         if isinstance(o, date):
-#             return o.isoformat()
-
-#         return super().default(o)
-
-# class MyFlask(Flask):
-#     json_encoder = MyJSONEncoder
 
 table_name = "ufo_data"
 table_name2 = "haunted_places"
@@ -54,7 +43,7 @@ def ghost():
 def ufo():
     return render_template('ufo_files.html')
 
-@app.route('/index.html')
+@app.route('/index')
 def back_home():
     return render_template('index.html')
 
@@ -98,15 +87,12 @@ def bigfoot_json():
     conn = psycopg2.connect(postgres_url)
     cursor = conn.cursor()
 
-    # cursor.execute(f'''ALTER TABLE {table_name3} DROP COLUMN id;''')
     cursor.execute(f'''select * from {table_name3};''')
     print("this is a test")
     results = cursor.fetchall()
     # print(results)
     bigfoot_db = [{"observed":result[0], "county":result[1], "state":result[2], "latitude":result[3], "longitude":result[4]} for result in results]
     # bigfoot_db = [{"date":result[5]} for result in results]
-    print("I'm going to describe the bigfoot db")
-    print(bigfoot_db)
     conn.close()
 
     print("responding to /postgresql-web-api route request")
