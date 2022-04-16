@@ -4,11 +4,22 @@ import sqlite3
 import psycopg2
 #from db import config
 from config import password 
-from datetime import datetime
-epoch = datetime(1970, 1, 1)
-t = datetime(1956, 3, 2)
-diff = t-epoch
-# print diff.days * 24 * 3600 + diff.seconds
+# from datetime import datetime
+# epoch = datetime(1970, 1, 1)
+# t = datetime(1956, 3, 2)
+# diff = t-epoch
+# # print diff.days * 24 * 3600 + diff.seconds
+from flask.json import JSONEncoder
+
+# class MyJSONEncoder(JSONEncoder):
+#     def default(self, o):
+#         if isinstance(o, date):
+#             return o.isoformat()
+
+#         return super().default(o)
+
+# class MyFlask(Flask):
+#     json_encoder = MyJSONEncoder
 
 table_name = "ufo_data"
 table_name2 = "haunted_places"
@@ -74,7 +85,7 @@ def ghost_json():
     cursor.execute(f'''SELECT * from {table_name2}''')
 
     results = cursor.fetchall()
-    ghost_files_db = [{"city":results[0], "country":results[1], "description":results[2], "location":results[3], "state":results[4], "state_abbrev":results[5], "longitude":results[6], "latitude":results[7]} for results in results]
+    ghost_files_db = [{"city":result[0], "country":result[1], "description":result[2], "location":result[3], "state":result[4], "state_abbrev":result[5], "longitude":result[6], "latitude":result[7]} for result in results]
 
     conn.close()
 
@@ -89,10 +100,13 @@ def bigfoot_json():
 
     # cursor.execute(f'''ALTER TABLE {table_name3} DROP COLUMN id;''')
     cursor.execute(f'''select * from {table_name3};''')
-
+    print("this is a test")
     results = cursor.fetchall()
-    bigfoot_db = [{"observed":results[0], "county":results[1], "state":results[2], "latitude":results[3], "longitude":results[4], "date":results[5]} for results in results]
-
+    # print(results)
+    bigfoot_db = [{"observed":result[0], "county":result[1], "state":result[2], "latitude":result[3], "longitude":result[4]} for result in results]
+    # bigfoot_db = [{"date":result[5]} for result in results]
+    print("I'm going to describe the bigfoot db")
+    print(bigfoot_db)
     conn.close()
 
     print("responding to /postgresql-web-api route request")
