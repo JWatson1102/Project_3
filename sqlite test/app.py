@@ -11,7 +11,7 @@ db_name = "favorite_color"
 app = Flask(__name__)
 
 @app.route("/")
-def sqlite_web_api():
+def sqlite_web_api():s
     conn = sqlite3.connect(f'cleandf.sqlite')
 
     cursor = conn.cursor()
@@ -24,8 +24,6 @@ def sqlite_web_api():
     conn.close()
     
     print("responding to /sqlite-web-api route request")
-
     return jsonify(color_data_from_db)
-
-if __name__ == "__main__":
+    if __name__ == "__main__":
     app.run(debug=True)
