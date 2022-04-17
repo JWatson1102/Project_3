@@ -14,7 +14,10 @@ html, body {
 .centered {
   text-align:center;
 }
-
+.centered1 {
+  padding-top: 25px;
+  text-align:center;
+}
 .zoom {
   /* padding: 10px; */
   transition: transform .2s;
