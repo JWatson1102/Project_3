@@ -11,12 +11,12 @@ table_name3 = "bigfoot_sightings"
 db_name = "haunted_places"
 
 #check if we're running in heroku and my environmental variable exist
-if 'DATABASE_URL' in os.environ:
-    postgres_url = os.environ['DATABASE_URL']
-else:
-    #if we're not running in heroku then try and get my local config password
+# if 'DATABASE_URL' in os.environ:
+#     postgres_url = os.environ['DATABASE_URL']
+# else:
+#     #if we're not running in heroku then try and get my local config password
     
-    postgres_url = f"postgresql://postgres:{password}@127.0.0.1:5433/{db_name}"
+#     postgres_url = f"postgresql://postgres:{password}@127.0.0.1:5433/{db_name}"
 
 
 app = Flask(__name__)
@@ -59,9 +59,9 @@ def ufo_json():
     return jsonify(ufo_db)
     
 @app.route("/api/haunted_places")
-def ghost_json():
+def sqlite_web_api():
+    conn = sqlite3.connect(f'db/{db_name}.db')
 
-    conn = psycopg2.connect(postgres_url)
     cursor = conn.cursor()
 
     cursor.execute(f'''SELECT * from {table_name2}''')
