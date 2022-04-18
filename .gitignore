@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 nuforc_reports.csv
+config.py
+app\config.py
