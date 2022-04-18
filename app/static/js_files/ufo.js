@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-// An array containing each city's name, location, and population
+//   // An array containing each city's name, location, and population
 fetch("/api/ufo_json")
     .then(response => response.json())
     .then(function (json) {
@@ -17,9 +17,8 @@ fetch("/api/ufo_json")
         for (var i = 0; i < json.length; i++) {
             var sighting = json[i];
             if (sighting) {
-                // console.log(sighting);
-                markers.addLayer(L.marker([sighting.Latitude, sighting.Longitude])
-                    .bindPopup(sighting.City + ", " + sighting.State + "<hr><p>" + "Shape: " + sighting.Shape + "<br>" + "Duration: "+ sighting.Duration + "<hr></p><p>" + sighting.Description + "</p>"));
+                markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
+                    .bindPopup(sighting.location + "<br>" + sighting.city + ", " + sighting.state_abbrev + "<hr><p>" + sighting.description + "</p>"));
             }
         }
     myMap.addLayer(markers);

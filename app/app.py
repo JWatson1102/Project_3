@@ -45,7 +45,7 @@ def back_home():
 @app.route("/api/ufo_json")
 def ufo_json():
 
-    conn = psycopg2.connect("..\sqlite test\lat_and_lon.sqlite")
+    conn = sqlite3.connect("..\sqlite test\lat_and_lon.sqlite")
     cursor = conn.cursor()
 
     cursor.execute(f'''SELECT * from ufo''')
@@ -77,10 +77,10 @@ def sqlite_web_api():
 @app.route("/api/bigfoot_data")
 def bigfoot_json():
 
-    conn = psycopg2.connect("..\sqlite test\lat_and_lon.sqlite")
+    conn = sqlite3.connect("..\sqlite test\lat_and_lon.sqlite")
     cursor = conn.cursor()
 
-    cursor.execute(f'''select * from bigfoot;''')
+    cursor.execute(f'''select * from bigfoot''')
     print("this is a test")
     results = cursor.fetchall()
     bigfoot_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
