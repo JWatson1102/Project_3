@@ -11,19 +11,21 @@ db_name = "favorite_color"
 app = Flask(__name__)
 
 @app.route("/")
-def sqlite_web_api():s
-    conn = sqlite3.connect(f'cleandf.sqlite')
+def sqlite_web_api():
+    conn = sqlite3.connect(f'lat_and_lon.sqlite')
 
     cursor = conn.cursor()
 
-    cursor.execute(f'''SELECT * COLOR from table1''')
+    cursor.execute(f'''SELECT * from hauntings''')
 
     results = cursor.fetchall()
-    ghost_files_db = [{"city":result[0], "country":result[1], "description":result[2], "location":result[3], "state":result[4], "state_abbrev":result[5], "longitude":result[6], "latitude":result[7]} for result in results]
+    ghost_files_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
 
     conn.close()
     
     print("responding to /sqlite-web-api route request")
-    return jsonify(color_data_from_db)
-    if __name__ == "__main__":
-    app.run(debug=True)
+    return jsonify(ghost_files_db)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)    
