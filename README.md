@@ -41,8 +41,8 @@
         <td>Data cleaning and importing dbs into SQL, troubleshooting</td>
     </tr>
     <tr>
-        <td>Marquetta Marquez</td>
-        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers, troubleshooting</td>
+        <td>Marquetta Valdez</td>
+        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers, css, js files for web pages, fetch API, troubleshooting</td>
     </tr>
     <tr>
         <td>Amy Castillon</td>
@@ -54,11 +54,11 @@
     </tr>
     <tr>
         <td>Mindy Garcia</td>
-        <td>Web creation, design, development, and debugging</td>
+        <td>Web creation, design, development, css, and debugging</td>
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
-        <td>Web development and debugging; testimonials, webpage descriptions, ReadMe</td>
+        <td>Web development and debugging; css, testimonial carousel, webpage descriptions, ReadMe</td>
     </tr>
 </table>
 
