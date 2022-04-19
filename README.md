@@ -47,7 +47,7 @@
     </tr>
     <tr>
         <td>Amy Castillon</td>
-        <td>Data cleaning and importing dbs into SQL, troubleshooting, web debugging, navbar functionality</td>
+        <td>Data cleaning and importing dbs into SQL, troubleshooting, web debugging, navbar css and functionality</td>
     </tr>
     <tr>
         <td>Josh Watson</td>
