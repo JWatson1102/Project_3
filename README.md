@@ -55,11 +55,11 @@
     </tr>
     <tr>
         <td>Mindy Garcia</td>
-        <td>Web creation, design, development, css, and debugging</td>
+        <td>Web creation, design, development, css, and debugging; website hosting and troubleshooting; music troubleshooting</td>
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
-        <td>Web development and debugging; css, testimonial carousel, webpage descriptions, ReadMe</td>
+        <td>Web development and debugging; music trouleshooting; css, testimonial carousel, webpage descriptions, ReadMe</td>
     </tr>
 </table>
 
