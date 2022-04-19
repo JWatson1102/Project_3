@@ -19,7 +19,7 @@ fetch("/api/bigfoot_data")
             
             if (sighting) {
                 markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
-                    .bindPopup(sighting.county + ", " + sighting.state + "<hr><p>" + sighting.observed + "</p>"));
+                    .bindPopup(sighting.county + ", " + sighting.state + "<br>" + sighting.date + "<hr><p>" + sighting.observed + "</p>"));
             }
         }
     myMap.addLayer(markers);

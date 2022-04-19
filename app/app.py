@@ -51,7 +51,7 @@ def ufo_json():
     cursor.execute(f'''SELECT * from ufo''')
 
     results = cursor.fetchall()
-    ufo_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
+    ufo_db = [{'description':result[1], 'shape':result[2], 'duration':result[3],'city':result[4],'state':result[5],'date':result[6], 'time':result[7],'latitude':result[8], 'longitude':result[9]} for result in results]
 
     conn.close()
 
@@ -67,7 +67,7 @@ def sqlite_web_api():
     cursor.execute(f'''SELECT * from hauntings''')
 
     results = cursor.fetchall()
-    ghost_files_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
+    ghost_files_db = [{'city':result[1], 'country':result[2], 'description':result[3],'location':result[4],'state':result[5],'state_abbrev':result[6],'latitude':result[7], 'longitude':result[8]} for result in results]
 
     conn.close()
 
@@ -83,7 +83,7 @@ def bigfoot_json():
     cursor.execute(f'''select * from bigfoot''')
     print("this is a test")
     results = cursor.fetchall()
-    bigfoot_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
+    bigfoot_db = [{'observed':result[1], 'county':result[2],'state':result[3],'latitude':result[4],'longitude':result[5], 'date':result[6]} for result in results]
     conn.close()
 
     print("responding to /postgresql-web-api route request")

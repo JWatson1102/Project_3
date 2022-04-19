@@ -18,7 +18,7 @@ fetch("/api/ufo_json")
             var sighting = json[i];
             if (sighting) {
                 markers.addLayer(L.marker([sighting.latitude, sighting.longitude])
-                    .bindPopup(sighting.location + "<br>" + sighting.city + ", " + sighting.state_abbrev + "<hr><p>" + sighting.description + "</p>"));
+                .bindPopup(sighting.city + ", " + sighting.state + "<br>" + sighting.date + " " + sighting.time + "<hr><p>" + sighting.description + "</p>"));
             }
         }
     myMap.addLayer(markers);

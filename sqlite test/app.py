@@ -19,7 +19,7 @@ def sqlite_web_api():
     cursor.execute(f'''SELECT * from hauntings''')
 
     results = cursor.fetchall()
-    ghost_files_db = [{'latitude':result[1], 'longitude':result[2]} for result in results]
+    ghost_files_db = [{'country':result[1], 'latitude':result[2], 'longitude':result[3]} for result in results]
 
     conn.close()
     
