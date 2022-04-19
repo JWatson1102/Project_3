@@ -65,3 +65,4 @@
 <img src="readme_images/readme_index_preview.PNG">
 <img src="readme_images/readme_bigfoot_preview.PNG">
 <img src="readme_images/readme_ufo_preview.PNG">
+<img src="readme_images/haunted_preview.PNG">
