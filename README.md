@@ -10,7 +10,7 @@
 
 - Interactive Leaflet maps that show density of sightings/events
 - Specific locations and brief descriptions of reports via map markers
-- Testimonial carousel of hauntings, UFO events, and bigfoot sightings</
+- Testimonial carousel of hauntings, UFO events, and bigfoot sightings
 
 <i><small>*We hope the music sets the spooky tone!</i></small>
 
@@ -25,9 +25,9 @@
 <b>Steps taken:</b>
 <li>Find data sources via data.world</li>
 <li>Clean data via pandas</li>
-<li>SQL</li>
-<li>Build webpage</li>
-<li>Build Leaflet maps</li>
+<li>Transfer to SQL</li>
+<li>Build webpage via CSS, Bootstrap, html, and javascript</li>
+<li>Build Leaflet maps and markers</li>
 <li>Incorporate Flask</li>
 <li>Debug, debug, debug and keep debugging</li>
 
