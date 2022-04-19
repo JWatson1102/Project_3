@@ -38,26 +38,30 @@
     </tr>
     <tr>
         <td>George Vallejo</td>
-        <td>Data cleaning and importing dbs into SQL</td>
+        <td>Data cleaning and importing dbs into SQL, troubleshooting</td>
     </tr>
     <tr>
         <td>Marquetta Marquez</td>
-        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers</td>
+        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers, troubleshooting</td>
     </tr>
     <tr>
         <td>Amy Castillon</td>
-        <td>Data cleaning and importing dbs into SQL, web debugging</td>
+        <td>Data cleaning and importing dbs into SQL, troubleshooting, web debugging</td>
     </tr>
     <tr>
         <td>Josh Watson</td>
-        <td>Flask incorporation and debugging; repository management</td>
+        <td>Flask app creator; incorporation and debugging; repository management</td>
     </tr>
     <tr>
         <td>Mindy Garcia</td>
-        <td>Web design, development, and debugging</td>
+        <td>Web creation, design, development, and debugging</td>
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
-        <td>Web development and debugging; collect testimonials and write page headers; ReadMe</td>
+        <td>Web development and debugging; collect testimonials,write webpage descriptions, ReadMe</td>
     </tr>
 </table>
+
+<img src="readme_index_preview.png">
+<img src="readme_bigfoot_preview.png">
+<img src="readme_ufo_preview.png">
