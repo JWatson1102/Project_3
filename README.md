@@ -43,7 +43,7 @@
     </tr>
     <tr>
         <td>Marquetta Valdez</td>
-        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers, css, js files for web pages, fetch API, troubleshooting</td>
+        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers, Leaflet css edits, js files for web pages, fetch API, troubleshooting</td>
     </tr>
     <tr>
         <td>Amy Castillon</td>
