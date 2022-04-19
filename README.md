@@ -14,7 +14,7 @@
 
 <i><small>*We hope the music sets the spooky tone!</i></small>
 
-<strong>{{ website }}</strong>
+<strong>https://project3.hostfirefly.com/templates/index.html</strong>
 
 <hr>
 
