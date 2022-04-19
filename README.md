@@ -1,16 +1,16 @@
 
 <!-- <h1 text-aligh:center;><b>Track the Paranormal!</b></h1> -->
 <center><img src="readme_images/readme_hand.png"></center>
-<h3>
+<h2>
 
-<strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h3>
+<strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h2s>
 
-<h3>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with: </h3>
-<h4>
+<h3>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages (or clicking on the corresponding creepy image) will bring you to a page with: </h3>
+
 
 - Interactive Leaflet maps that show density of sightings/events
 - Specific locations and brief descriptions of reports via map markers
-- Testimonial carousel of hauntings, UFO events, and bigfoot sightings</h4>
+- Testimonial carousel of hauntings, UFO events, and bigfoot sightings</
 
 <i><small>*We hope the music sets the spooky tone!</i></small>
 
@@ -18,7 +18,7 @@
 
 <hr>
 
-<h3>Please find in our repository the source data files which we cleaned.  You can also find the databases we created with these to import into SQL.</h3>
+<h3>Above, please find our repository with the source data files which we cleaned.  You can also find the databases we created with these to import into SQL, and all the needed files we created to make this website functional.</h3>
 
 <br>
 
@@ -46,7 +46,7 @@
     </tr>
     <tr>
         <td>Amy Castillon</td>
-        <td>Data cleaning and importing dbs into SQL, troubleshooting, web debugging</td>
+        <td>Data cleaning and importing dbs into SQL, troubleshooting, web debugging, navbar functionality</td>
     </tr>
     <tr>
         <td>Josh Watson</td>
