@@ -58,10 +58,10 @@
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
-        <td>Web development and debugging; collect testimonials,write webpage descriptions, ReadMe</td>
+        <td>Web development and debugging; testimonials, webpage descriptions, ReadMe</td>
     </tr>
 </table>
 
-<img src="readme_index_preview.png">
-<img src="readme_bigfoot_preview.png">
-<img src="readme_ufo_preview.png">
+<img src="readme_images/readme_index_preview.PNG">
+<img src="readme_images/readme_bigfoot_preview.PNG">
+<img src="readme_images/readme_ufo_preview.PNG">
