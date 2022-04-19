@@ -8,26 +8,28 @@
 <h3>When you arrive at our website, you will notice three topics to explore: Ghost Files, UFO Files, and Bigfoot Files. Navigating to each of these pages will bring you to a page with: </h3>
 <h4>
 
-- Interactive maps with density of sightings/events
-- Specific locations and brief descriptions of reports
-- Testimonials of hauntings, UFO events, and bigfoot sightings</h4>
+- Interactive Leaflet maps that show density of sightings/events
+- Specific locations and brief descriptions of reports via map markers
+- Testimonial carousel of hauntings, UFO events, and bigfoot sightings</h4>
 
-<i><small>*When you arrive at our webpage, you will see a spooooky music option - we recommend you give it a try for the full effect!</i></small>
+<i><small>*We hope the music sets the spooky tone!</i></small>
 
 <strong>{{ website }}</strong>
 
 <hr>
 
-<h3>Please find in our repository the source data files which we cleaned up and sifted through.  You can also find the databases we created with these.</h3>
+<h3>Please find in our repository the source data files which we cleaned.  You can also find the databases we created with these to import into SQL.</h3>
 
 <br>
 
 <b>Steps taken:</b>
-<li>Find data sources</li>
-<li>Filter through for useful data</li>
-<li>Create functional databases</li>
-<li>Build basis of HTML webpage</li>
-<li>Decorate and troubleshoot pages</li>
+<li>Find data sources via data.world</li>
+<li>Clean data via pandas</li>
+<li>SQL</li>
+<li>Build webpage</li>
+<li>Build Leaflet maps</li>
+<li>Incorporate Flask</li>
+<li>Debug, debug, debug and keep debugging</li>
 
 <hr>
 <table>
@@ -36,20 +38,26 @@
     </tr>
     <tr>
         <td>George Vallejo</td>
+        <td>Data cleaning and importing dbs into SQL</td>
     </tr>
     <tr>
         <td>Marquetta Marquez</td>
+        <td>Data cleaning and importing dbs into SQL; Leaflet maps/markers</td>
     </tr>
     <tr>
         <td>Amy Castillon</td>
+        <td>Data cleaning and importing dbs into SQL, web debugging</td>
     </tr>
     <tr>
         <td>Josh Watson</td>
+        <td>Flask incorporation and debugging; repository management</td>
     </tr>
     <tr>
         <td>Mindy Garcia</td>
+        <td>Web design, development, and debugging</td>
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
+        <td>Web development and debugging; collect testimonials and write page headers; ReadMe</td>
     </tr>
 </table>
