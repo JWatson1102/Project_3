@@ -34,7 +34,8 @@
 <hr>
 <table>
     <tr>
-        <th>Group Members:</th>
+        <th>Group Members</th>
+        <th>Member Roles</th>
     </tr>
     <tr>
         <td>George Vallejo</td>
@@ -63,6 +64,12 @@
 </table>
 
 <img src="readme_images/readme_index_preview.PNG">
+<br>
+<br>
 <img src="readme_images/readme_bigfoot_preview.PNG">
+<br>
+<br>
 <img src="readme_images/readme_ufo_preview.PNG">
+<br>
+<br>
 <img src="readme_images/haunted_preview.PNG">
