@@ -1,6 +1,6 @@
 
 <!-- <h1 text-aligh:center;><b>Track the Paranormal!</b></h1> -->
-<center><img src="readme_hand.png"></center>
+<center><img src="readme_images/readme_hand.png"></center>
 <h3>
 
 <strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h3>
