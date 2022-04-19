@@ -1,8 +1,7 @@
 from flask import Flask, jsonify, render_template, redirect
 import os
 import sqlite3
-import psycopg2
-from config import password 
+import psycopg2 
 
 
 table_name = "ufo_data"
