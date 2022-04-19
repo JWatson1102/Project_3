@@ -1,6 +1,6 @@
 
 <!-- <h1 text-aligh:center;><b>Track the Paranormal!</b></h1> -->
-<center><img src="readme_hand.png"></center>
+<center><img src="readme_images/readme_hand.png"></center>
 <h3>
 
 <strong>Hello, welcome to our project!  We wanted to bring the spooky to you to peruse at your leisure.</strong></h3>
@@ -58,10 +58,10 @@
     </tr>
     <tr>
         <td>Rachel Dowdy</td>
-        <td>Web development and debugging; collect testimonials,write webpage descriptions, ReadMe</td>
+        <td>Web development and debugging; testimonials, webpage descriptions, ReadMe</td>
     </tr>
 </table>
 
-<img src="readme_index_preview.png">
-<img src="readme_bigfoot_preview.png">
-<img src="readme_ufo_preview.png">
+<img src="readme_images/readme_index_preview.PNG">
+<img src="readme_images/readme_bigfoot_preview.PNG">
+<img src="readme_images/readme_ufo_preview.PNG">
