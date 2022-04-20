@@ -25,15 +25,15 @@
 <h3>Steps taken:</h3>
 <h4><b>Extract</b></h4>
 <li>Find data sources via data.world (csv)</li>
-<li>Jupyter Notebook to clean data via pandas</li>
+<li>Jupyter Notebook to view, clean, and organize data via pandas</li>
 
 <h4><b>Transform</b></h4>
 <li>Transfer to SQL/SQLite</li>
-<li>Use JSON data for API call</li>
+<li>Use data as JSON data for API call</li>
 
 <h4><b>Load</b></h4>
-<li>Build Leaflet maps and markers</li>
-<li>Incorporate Flask</li>
+<li>Build Leaflet maps and populate marker descriptions using JavaScript via the JSON API call</li>
+<li>Incorporate Flask app and connectivity</li>
 
 <h4><b>Web Building</b></h4>
 <li>Build webpage via CSS, Bootstrap, html, and javascript</li>
