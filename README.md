@@ -22,13 +22,21 @@
 
 <br>
 
-<b>Steps taken:</b>
-<li>Find data sources via data.world</li>
-<li>Clean data via pandas</li>
-<li>Transfer to SQL</li>
-<li>Build webpage via CSS, Bootstrap, html, and javascript</li>
+<h3>Steps taken:</h3>
+<h4><b>Extract</b></h4>
+<li>Find data sources via data.world (csv)</li>
+<li>Jupyter Notebook to clean data via pandas</li>
+
+<h4><b>Transform</b></h4>
+<li>Transfer to SQL/SQLite</li>
+<li>Use JSON data for API call</li>
+
+<h4><b>Load</b></h4>
 <li>Build Leaflet maps and markers</li>
 <li>Incorporate Flask</li>
+
+<h4><b>Web Building</b></h4>
+<li>Build webpage via CSS, Bootstrap, html, and javascript</li>
 <li>Debug, debug, debug and keep debugging</li>
 
 <hr>
