@@ -26,7 +26,7 @@
 <h1>Steps taken:</h1>
 <h4><b>Extract</b></h4>
 <li>Find data sources via data.world (csv)</li>
-<li>Jupyter Notebook to view, clean, and organize data via pandas</li>
+<li>Jupyter Notebook to view, clean, and organize data via Python/pandas</li>
 
 <h4><b>Transform</b></h4>
 <li>Transfer to SQL/SQLite</li>
@@ -86,4 +86,5 @@ UFO Sightings, Featuring Navbar Hamburger!
 <br>
 <hr>
 Haunting Events, Featuring Testimonial Carousel and Popups With Descriptions from Source Data
+
 <img src="readme_images/haunted_preview.PNG">
