@@ -91,9 +91,9 @@ Haunting Events, Featuring Testimonial Carousel and Popups With Descriptions fro
 
 
 <h1> Issues that arose:</h1>
-- Adding carousel function moved contents of pages incorrectly
-- Inconsistencies between appearance of website between Live Server and Flask
-- Issue with hamburger button on navbar moving rest of navbar
-- Flask was unable to use raw json files to create map markers
-- Syntax for creating sqlite malfunctioned when trying to create full tables of csv's
-- Sqlite databse was initially too large to upload to GitHub
+    - Adding carousel function moved contents of pages incorrectly
+    - Inconsistencies between appearance of website between Live Server and Flask
+    - Issue with hamburger button on navbar moving rest of navbar
+    - Flask was unable to use raw json files to create map markers
+    - Syntax for creating sqlite malfunctioned when trying to create full tables of csv's
+    - Sqlite databse was initially too large to upload to GitHub
