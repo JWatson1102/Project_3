@@ -131,3 +131,4 @@ dmypy.json
 nuforc_reports.csv
 config.py
 app\config.py
+app/..\sqlite test\lat_and_lon.sqlite
