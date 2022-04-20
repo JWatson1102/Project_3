@@ -85,6 +85,9 @@ UFO Sightings, Featuring Navbar Hamburger!
 <img src="readme_images/readme_ufo_preview.PNG">
 <br>
 <hr>
-Haunting Events, Featuring Testimonial Carousel and Popups With Descriptions from Source Data
+Haunting Events, Featuring Testimonial Carousel and Popups With Descriptions from Source Data<br>
 
 <img src="readme_images/haunted_preview.PNG">
+
+
+<h1> Issues that arose:</h1>
