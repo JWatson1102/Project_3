@@ -16,60 +16,65 @@
   <meta name="author" content="LayoutIt!">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin="" />
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
 
   <!-- Leaflet JavaScript code -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-  crossorigin=""></script>
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
   <!-- Marker cluster CSS -->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- <link href="css/style.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="../static/style.css">
 
 </head>
 
 <body>
-<!--Navigation bar and buttons-->
-    <!--Navigation bar and buttons-->
-    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
-      <div id="buttons">
-          <div
-              style="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;">
-              <button type="button" class="btn pos_right btn-transparent zoom1">
-                  <a style="color: red; text-decoration: none; " href="index.html">Home</a>
-          </div>
-          <div
-              style="position: absolute; top: 13%; right: 0%; font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
-              <div id="buttons">
+  <!--Navigation bar and buttons-->
+  <!--Navigation bar and buttons-->
+  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark background-color:#002d60 py-4">
+    <div id="buttons">
+      <div
+        style="position: absolute; top: 13%; left: 0%; font-family: 'Courier New', Courier, monospace; font-size:10px;">
+        <button type="button" class="btn pos_right btn-transparent zoom1">
+          <a style="color: red; text-decoration: none; " href="index.html">Home</a>
+      </div>
+      <div
+        style="position: absolute; top: 13%; right: 0%; font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
+        <div id="buttons">
 
-                  <button type="button" class="btn btn-transparent zoom1">
-                      <a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
-                  </button>
-                  </ul>
-                  <button type="button" class="btn btn-transparent zoom1">
-                      <a style="color: red; text-decoration: none; " href="ufo_files.html">UFO Files</a>
-                  </button>
-                  <button type="button" class="btn btn-transparent zoom1">
-                      <a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
-                  </button>
-              </div>
-            </div>
+          <button type="button" class="btn btn-transparent zoom1">
+            <a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
+          </button>
+          </ul>
+          <button type="button" class="btn btn-transparent zoom1">
+            <a style="color: red; text-decoration: none; " href="ufo_files.html">UFO Files</a>
+          </button>
+          <button type="button" class="btn btn-transparent zoom1">
+            <a style="color: red; text-decoration: none; " href="bigfoot_files.html">Bigfoot Files</a>
+          </button>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
   <div id="hamburgerbox">
     <nav class="navbar navbar-dark" id="nav_bar">
       <div class="container-fluid">
-        <button id="hamburger" style="margin-left:auto" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="hamburger" style="margin-left:auto" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>
-    <div class="collapse" id="navbarToggleExternalContent" style="font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
+    <div class="collapse" id="navbarToggleExternalContent"
+      style="font-family: 'Courier New', Courier, monospace; font-size: 10px ;">
       <div class="bg-dark p-4">
         <button type="button" class="btn">
           <a style="color: red; text-decoration: none; " href="ghost_files.html">Ghost Files</a>
@@ -84,78 +89,77 @@
     </div>
   </div>
 
-<!-- these breaks and hrs are the only way I can keep 
+  <!-- these breaks and hrs are the only way I can keep 
   the Headings from appearing either over or underneath the navbar -->
-<br>
+  <br>
 
-<hr>
+  <hr>
 
-<br>
-<!-- Headings -->
-<div class="page-header container-fluid">
+  <br>
+  <!-- Headings -->
+  <div class="page-header container-fluid">
     <h1 style="color:crimson"><b>UFO Sightings</b></h1>
-      <h3 style="color:ghostwhite"><b>Let your curiosity get the best of you - search for your hometown, or the areas most visited 
-        by Unidentified Aerial Phenomenon by interacting with the map below.  You can also click on specific locations to read a 
+    <h3 style="color:ghostwhite"><b>Let your curiosity get the best of you - search for your hometown, or the areas most
+        visited
+        by Unidentified Aerial Phenomenon by interacting with the map below. You can also click on specific locations to
+        read a
         short description of what happened there!</b></h3>
-</div>
+  </div>
 
 
-<br>
-    <!-- Testimonial Carousel -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~ -->
-<h5><i style="color:whitesmoke; padding-left:80px"><b>Testimonials...</b></i></h5>
+  <br>
+  <!-- Testimonial Carousel -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+  <h5><i style="color:whitesmoke; padding-left:80px"><b>Testimonials...</b></i></h5>
   <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p style="color:whitesmoke"><i>
-                "The alien craft was supposedly the size of a car and covered in writing that resembled 
-                Egyptian hieroglyphs. Locals claim that the U.S. military rolled in, secured a perimeter, 
-                kicked civilians out, and took something away on a flatbed truck."
-                -Kecksburg, Pennsylvania December 1965</i></p>
-          </div>
-          <div class="carousel-item">
-            <p style="color:whitesmoke"><i>
-                "They hovered there, strobing for 2 or 3 minutes, bright like German auto headlights. Then 
-                they shot off at blazing speed like a school of fish, you know, when it’s frightened."
-                -Stephenville, Texas January 2008</i></p>
-          </div>
-          <div class="carousel-item">
-            <p style="color:whitesmoke"><i>
-                "The UFO positioned itself over the lone elk and beamed it right off the ground, though the 
-                observers couldn’t discern any “visible means of support” attached to it."
-                Washington State, 1999</i></p>
-          </div>
-          <div class="carousel-item">
-            <p style="color:whitesmoke"><i>
-                "All was still and silent for an hour or so, until they came upon a 20- to 30-foot flying 
-                ship hovering as low as the streetlights..."
-                -Sunnyvale, California Summer 1971</i></p> 
-          </div>
-          <div class="carousel-item">
-            <p style="color:whitesmoke"><i>
-                "Suddenly, what they thought was one abnormally bright star split into a sphere comprising 
-                roughly 20 points of light—much like a Hoberman sphere."
-                -Olympia, Washington 1991</i></p> 
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p style="color:whitesmoke"><i>
+            "The alien craft was supposedly the size of a car and covered in writing that resembled
+            Egyptian hieroglyphs. Locals claim that the U.S. military rolled in, secured a perimeter,
+            kicked civilians out, and took something away on a flatbed truck."
+            -Kecksburg, Pennsylvania December 1965</i></p>
       </div>
+      <div class="carousel-item">
+        <p style="color:whitesmoke"><i>
+            "They hovered there, strobing for 2 or 3 minutes, bright like German auto headlights. Then
+            they shot off at blazing speed like a school of fish, you know, when it’s frightened."
+            -Stephenville, Texas January 2008</i></p>
+      </div>
+      <div class="carousel-item">
+        <p style="color:whitesmoke"><i>
+            "The UFO positioned itself over the lone elk and beamed it right off the ground, though the
+            observers couldn’t discern any “visible means of support” attached to it."
+            Washington State, 1999</i></p>
+      </div>
+      <div class="carousel-item">
+        <p style="color:whitesmoke"><i>
+            "All was still and silent for an hour or so, until they came upon a 20- to 30-foot flying
+            ship hovering as low as the streetlights..."
+            -Sunnyvale, California Summer 1971</i></p>
+      </div>
+      <div class="carousel-item">
+        <p style="color:whitesmoke"><i>
+            "Suddenly, what they thought was one abnormally bright star split into a sphere comprising
+            roughly 20 points of light—much like a Hoberman sphere."
+            -Olympia, Washington 1991</i></p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <div style="display:inline-block; height:85%; width:100%; margin-top:0;" id="map"></div>
-  <!-- I might have to add this line but back but since we're going to be pulling the data from the
-      flask, it might not be necessary -->
-  <!-- <script type="text/javascript" src="../../bigfoot_data/bigfoot.json"></script> -->
   <script type="text/javascript" src="/static/js_files/ufo.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
